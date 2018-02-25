@@ -1,0 +1,29 @@
+{
+  "name": "@noxx/eslint-config",
+  "version": "1.0.0",
+  "description": "My shareable eslint config",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the0neWhoKnocks/eslint-config-noxx.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "noxx"
+  ],
+  "author": "Trevor Lemon",
+  "bugs": {
+    "url": "https://github.com/the0neWhoKnocks/eslint-config-noxx/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/the0neWhoKnocks/eslint-config-noxx#readme",
+  "dependencies": {
+    "eslint": "^4.18.1",
+    "eslint-plugin-jest": "^21.12.2",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 4"
+  }
+}
