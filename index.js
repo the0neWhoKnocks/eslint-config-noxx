@@ -4,6 +4,7 @@ module.exports = {
     commonjs: true,
     es6: true,
     node: true,
+    'jest/globals': true,
   },
   extends: 'eslint:recommended',
   parserOptions: {
@@ -26,6 +27,10 @@ module.exports = {
     indent: [
       'error',
       2,
+      {
+        MemberExpression: 1,
+        SwitchCase: 1,
+      }
     ],
     'key-spacing': [
       'error',
@@ -55,6 +60,10 @@ module.exports = {
             after: false,
             before: false,
           },
+          switch: {
+            after: false,
+            before: false,
+          },
         },
       },
     ],
@@ -72,6 +81,7 @@ module.exports = {
         args: 'none',
       }
     ],
+    'no-useless-concat': 'error',
     'no-whitespace-before-property': 2,
     'object-curly-spacing': [
       'error',
@@ -91,7 +101,7 @@ module.exports = {
       'error',
       'single',
       {
-        allowTemplateLiterals: true,
+        //allowTemplateLiterals: true,
         avoidEscape: true,
       }
     ],
