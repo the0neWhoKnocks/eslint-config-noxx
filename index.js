@@ -12,6 +12,7 @@ module.exports = {
       experimentalObjectRestSpread: true,
       jsx: true,
     },
+    ecmaVersion: 2017, // adds async/await support
     sourceType: 'module',
   },
   plugins: [
