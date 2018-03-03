@@ -1,6 +1,6 @@
 {
   "name": "@noxx/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "My shareable eslint config",
   "main": "./index.js",
   "repository": {
