@@ -10,9 +10,12 @@ My shareable eslint config
 
 ```sh
 npm i -D @noxx/eslint-config
+// OR
+yarn add -D @noxx/eslint-config
 ```
 
-Inside of `.eslintrc.js`
+
+Inside of `.eslintrc.js` (at root of repo)
 
 ```js
 module.exports = {
@@ -27,6 +30,10 @@ Inside of the `scripts` node of `package.json`
   "test": "eslint ./**/*.js"
 },
 ```
+
+---
+
+## Notes
 
 If you have any dot folders or files that you want to be linted, create a
 `.eslintignore` and add this:

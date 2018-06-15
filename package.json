@@ -1,6 +1,6 @@
 {
   "name": "@noxx/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "My shareable eslint config",
   "main": "./index.js",
   "repository": {
@@ -24,6 +24,6 @@
     "eslint-plugin-react": "^7.7.0"
   },
   "peerDependencies": {
-    "eslint": ">= 4"
+    "eslint": ">= 4.18.1"
   }
 }
