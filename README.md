@@ -37,8 +37,18 @@ Inside of the `scripts` node of `package.json`
 
 If you have any dot folders or files that you want to be linted, create a
 `.eslintignore` and add this:
-
 ```
 !.FOLDER_NAME/
 !.FILE_NAME
+```
+
+If you need support for dynamic imports `import('FILE')`, then you'll need to
+install `babel-eslint` and add it to your `.eslintrc.js`, this will add support
+for stage-3 features.
+```js
+module.exports = {
+  ...
+  parser: 'babel-eslint',
+  ...
+};
 ```
