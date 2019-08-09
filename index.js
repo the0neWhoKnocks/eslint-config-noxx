@@ -8,6 +8,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:jsdoc/recommended',
     'plugin:react/recommended',
   ],
   parserOptions: {
@@ -15,11 +16,12 @@ module.exports = {
       experimentalObjectRestSpread: true,
       jsx: true,
     },
-    ecmaVersion: 2017, // adds async/await support
+    ecmaVersion: 2018, // adds async/await & spread support
     sourceType: 'module',
   },
   plugins: [
     'jest',
+    'jsdoc',
     'react',
   ],
   // https://eslint.org/docs/rules/
@@ -43,33 +45,6 @@ module.exports = {
         beforeColon: false,
         mode: 'strict',
       }
-    ],
-    'keyword-spacing': [
-      'error',
-      {
-        overrides: {
-          catch: {
-            after: false,
-            before: false,
-          },
-          else: {
-            after: false,
-            before: false,
-          },
-          if: {
-            after: false,
-            before: false,
-          },
-          for: {
-            after: false,
-            before: false,
-          },
-          switch: {
-            after: false,
-            before: false,
-          },
-        },
-      },
     ],
     'linebreak-style': [
       'error',
@@ -107,18 +82,6 @@ module.exports = {
       {
         //allowTemplateLiterals: true,
         avoidEscape: true,
-      }
-    ],
-    'require-jsdoc': [
-      'error',
-      {
-        require: {
-          ArrowFunctionExpression: true,
-          ClassDeclaration: true,
-          FunctionDeclaration: true,
-          FunctionExpression: true,
-          MethodDefinition: true,
-        }
       }
     ],
     semi: [

@@ -1,6 +1,6 @@
 {
   "name": "@noxx/eslint-config",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "My shareable eslint config",
   "main": "./index.js",
   "repository": {
@@ -19,11 +19,11 @@
   "license": "MIT",
   "homepage": "https://github.com/the0neWhoKnocks/eslint-config-noxx#readme",
   "dependencies": {
-    "eslint": "^4.18.1",
     "eslint-plugin-jest": "^21.12.2",
+    "eslint-plugin-jsdoc": "^15.8.0",
     "eslint-plugin-react": "^7.7.0"
   },
   "peerDependencies": {
-    "eslint": ">= 4.18.1"
+    "eslint": "^6.0.0"
   }
 }
