@@ -38,6 +38,7 @@ module.exports = {
         SwitchCase: 1,
       }
     ],
+    'jsdoc/require-returns-description': 0,
     'key-spacing': [
       'error',
       {
